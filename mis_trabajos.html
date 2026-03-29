@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Sitio</title>
+    <link rel="stylesheet" href="styles_own_prd.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</head>
+    <body>
+
+        <!-- NAV -->
+        <nav class="navbar-custom">
+            <div class="nav-container">
+            <img src="IMG/logo.svg" class="logo-img" alt="logo">
+
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="index.html">Sobre mi</a></li>
+                <li><a class="nav-link active" href="#">Mis trabajos</a></li>
+                <li><a class="nav-link" href="Contacto.html">Contacto</a></li>
+            </ul>
+            </div>
+        </nav>
+
+        <section class="text">
+            <div class="media-text">
+            <h1>Mis trabajos</h1>
+            <p>
+                Mis obras exploran la identidad de cada mascota a través de composiciones dinámicas,
+                formas simplificadas y una paleta de color unica. Cada pieza es una interpretación
+                artística que resalta lo único de cada peludito, convirtiéndolo en el protagonista
+                de una imagen moderna y memorable.
+            </p>
+            </div>
+        </section>
+
+        <!-- GALERÍA IMÁGENES -->
+        <section class="gallery gallery-images">
+            <a href="IMG/Foto2.jpeg" data-fancybox="images"><img src="IMG/Foto2.jpeg" alt="gato"></a>
+            <a href="IMG/Foto3.jpeg" data-fancybox="images"><img src="IMG/Foto3.jpeg" alt="perrita"></a>
+            <a href="IMG/Foto4.jpeg" data-fancybox="images"><img src="IMG/Foto4.jpeg" alt="gatos"></a>
+
+            <a href="IMG/Foto5.jpeg" data-fancybox="images"><img src="IMG/Foto5.jpeg" alt="Imagen 4"></a>
+            <a href="IMG/Foto6.jpeg" data-fancybox="images"><img src="IMG/Foto6.jpeg" alt="Imagen 5"></a>
+            <a href="IMG/Foto8.jpeg" data-fancybox="images"><img src="IMG/Foto8.jpeg" alt="Imagen 6"></a>
+        </section>
+
+        <!-- GALERÍA VIDEOS -->
+        <section class="gallery gallery-videos">
+            <a href="VID/Video2.mp4" data-fancybox="videos" data-type="video">
+                <img src="IMG/thumbnail_1.png" alt="Video 1">
+            </a>
+            <a href="VID/Video3.mp4" data-fancybox="videos" data-type="video">
+                <img src="IMG/thumbnail_2.png" alt="Video 2">
+            </a>
+            <a href="VID/Video4.mp4" data-fancybox="videos" data-type="video">
+                <img src="IMG/thumbnail_3.png" alt="Video 3">
+            </a>
+        </section>
+
+        
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-logo">
+                <a href="index.html">
+                <img src="IMG/logo.svg" alt="logo">
+                </a>
+            </div>
+        </footer>
+
+
+        <!-- Fancybox config para videos -->
+            <script>
+            Fancybox.bind("[data-fancybox='videos']", {
+                Video: {
+                autoplay: false,
+                preload: "none"
+                }
+            });
+            </script>
+
+
+       
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
