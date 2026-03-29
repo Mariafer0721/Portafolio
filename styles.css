@@ -169,16 +169,24 @@
   padding: 0 20px;
   font-family: var(--font-family);
   color: var(--color-negro);
+  align-items: flex-start;
 }
 .contact-left {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 24px;
+}
+.contact-text,
+.contact-info {
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  padding: 30px;
 }
 .contact-text h2 {
   font-weight: bold;
-  color: var(--color-oscuro);
+  color: var(--color-negro);
+  margin-bottom: 12px;
 }
 .contact-text p {
   font-size: 1rem;
@@ -200,8 +208,9 @@
 }
 .contact-form {
   flex: 1;
-  display: flex;
-  flex-direction: column;
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  padding: 30px;
 }
 .contact-form form {
   display: flex;
@@ -215,33 +224,37 @@
 .contact-form input,
 .contact-form textarea {
   padding: 10px 14px;
-  border: 1px solid var(--color-claro);
-  border-radius: 6px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   font-family: var(--font-family);
   font-size: 0.95rem;
   background-color: #fff;
   color: var(--color-negro);
   outline: none;
   transition: border-color 0.2s;
+  width: 100%;
+  box-sizing: border-box;
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--color-medio);
 }
 .contact-form button {
-  align-self: flex-start;
-  padding: 10px 30px;
-  background-color: var(--color-oscuro);
+  width: 100%;
+  padding: 12px;
+  background-color: var(--color-medio);
   color: #fff;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-family: var(--font-family);
   font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.2s;
+  margin-top: 8px;
 }
 .contact-form button:hover {
-  background-color: var(--color-medio);
+  background-color: var(--color-oscuro);
 }
 @media (max-width: 768px) {
   .contact-section {
